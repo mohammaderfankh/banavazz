@@ -208,7 +208,7 @@ h2 {
 
 
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:850px) {
     .nav {
         padding: 0 2rem;
     }
@@ -259,7 +259,119 @@ h2 {
     margin: 1rem 0;
 }
 
-.btn__primary{
+.btn__primary {
     background-color: var(--color-white);
     color: var(--color-primary);
+}
+
+/* hero */
+
+.hero-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.4s ease-out;
+}
+
+.mobile-size {
+    display: block;
+}
+
+.desktop-size {
+    display: none;
+}
+
+.hero-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-right: 2rem;
+}
+
+.hero-title {
+    color: var(--color-white);
+    font-size: 3.2rem;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.hero-text-body {
+    font-size: 1.8rem;
+    font-weight: 500;
+    width: 342px;
+    width: 90%;
+    line-height: 3.5rem;
+}
+
+.btn-shop {
+    padding: 0.5rem 1.5rem;
+}
+
+.hero-footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+@media screen and (min-width:600px) {
+    .hero-section {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    .mobile-size {
+        display: none;
+    }
+
+    .desktop-size {
+        display: flex;
+        position: relative;
+        margin-top: 3rem;
+    }
+
+    .building {
+        width: 400px;
+        margin-top: 8rem;
+    }
+
+    .mobile {
+        position: absolute;
+        top: 10%;
+        left: 8%;
+        width: 180px;
+    }
+
+    .hero-body {
+        margin-top: 2rem;
+        width: 50%;
+        padding-right: 0;
+    }
+
+    .hero-title {
+        width: 100%;
+        font-size: 5rem;
+        font-weight: 700;
+    }
+
+    .hero-footer {
+        margin-top: 5rem;
+        width: 50%;
+    }
+
+    .hero-text-body {
+        width: 80%;
+        line-height: 4rem;
+    }
+
+    .hero-footer {
+        padding: 0 3rem;
+    }
 }
