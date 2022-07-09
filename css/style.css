@@ -523,7 +523,6 @@ h2 {
 .manag-top {
     background-color: #F6F6F6;
     display: flex;
-    flex-wrap: wrap;
 }
 
 
@@ -545,7 +544,7 @@ h2 {
 .child-text {
     width: 60%;
     height: auto;
-    /* padding: 0 3.5rem; */
+    padding: 2rem 0;
     right: -50px;
     z-index: 3;
     position: relative;
@@ -553,6 +552,7 @@ h2 {
 
 .child-text h2 {
     color: var(--color-secondary-dark);
+    font-size: 1.6rem;
 }
 
 .child-text h3 {
@@ -726,5 +726,72 @@ h2 {
         border-radius: 15px;
         font-size: 2.2rem;
         padding: 0.5rem 2.5rem;
+    }
+}
+
+/* Sensor Efficiency */
+
+
+.sensor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 300px;
+}
+
+.sensor-detail {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sensor-img {
+    margin: 2rem 0;
+}
+
+.sensor-text {
+    width: 100%;
+    height: 90px;
+    padding: 0;
+    font-size: 1.3rem;
+    color: #474747;
+}
+
+.sensor-phone {
+    display: block;
+}
+
+.sensor-desktop {
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+    .sensor {
+        flex-wrap: nowrap;
+        height: 400px;
+    }
+
+    .sensor-text {
+        font-size: 2rem;
+        font-weight: 400;
+        height: 130px;
+    }
+
+
+    .sensor-img{
+        border-radius: 15px;
+    }
+
+    .sensor-phone {
+        display: none;
+    }
+
+    .sensor-desktop {
+        display: block;
     }
 }
