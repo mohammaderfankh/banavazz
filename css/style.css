@@ -810,7 +810,7 @@ h2 {
 }
 
 .honor-detail {
-    margin-top: 2rem ;
+    margin-top: 2rem;
     margin-right: 2rem;
 }
 
@@ -847,7 +847,136 @@ h2 {
         width: 80%;
         font-size: 3rem;
     }
-    .honor-img{
+
+    .honor-img {
         margin: 6rem;
+    }
+}
+
+/* Footer */
+.main-footer {
+    background-color: #146183;
+}
+
+.main-footer .footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+.footer__item {
+    width: 45%;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 1.5rem 0.5rem;
+}
+
+.footer__item h6 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #F4F5F7;
+}
+
+.footer__item a {
+    padding: 1rem 0.5rem;
+    text-decoration: none;
+    color: #EEEFF4;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.footer__item img {
+    cursor: pointer;
+    width: 70%;
+}
+
+.footer__item .link-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 0.5px solid #fff;
+}
+
+.links {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-i {
+    background-color: #056b97;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 100%;
+    margin: 0 2rem;
+    text-decoration: none;
+}
+
+.link-i a {
+    text-decoration: none;
+}
+
+.link-i i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.footer-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #D9DBE1;
+    margin: 2rem 0;
+}
+
+@media screen and (min-width:1024px) {
+    .main-footer {
+        background: linear-gradient(97.01deg, #53B9D9 -6.41%, rgba(20, 77, 101, 0) 110.43%);
+    }
+
+    .main-footer .footer {
+        flex-wrap: nowrap;
+    }
+
+    .footer-link {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 5rem;
+    }
+
+    .footer__item h6 {
+        font-size: 2.4rem;
+    }
+
+    .footer__item a {
+        font-size: 2rem;
+        font-weight: 400;
+
+    }
+
+    .footer-text {
+        font-size: 1.8rem;
+    }
+
+    .link-i {
+        background-color: #68b0d1;
     }
 }
